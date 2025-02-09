@@ -6,7 +6,7 @@ import { PropsWithChildren } from 'react';
 export function PrivyClientProvider({ children }: PropsWithChildren) {
   return (
     <PrivyProvider
-      appId={process.env.NEXT_PUBLIC_PRIVY_APP_ID}
+      appId={process.env.NEXT_PUBLIC_PRIVY_APP_ID || ''}
       config={{
         loginMethods: ['email', 'wallet'],
         appearance: {

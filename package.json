@@ -12,7 +12,8 @@
     "@privy-io/react-auth": "^2.4.2",
     "next": "15.1.6",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "use-sync-external-store": "^1.4.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

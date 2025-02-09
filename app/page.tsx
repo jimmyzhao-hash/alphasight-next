@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { usePrivy } from '@privy-io/react-auth';
 
 export default function Home() {
-  const { user, logout } = usePrivy();
+  const { user, logout } = usePrivy() as { user: { email?: string | { emailAddress: string }, avatar?: { url: string } }, logout: () => void };
 
   const [projectInfo, setProjectInfo] = useState({
     name: '',
